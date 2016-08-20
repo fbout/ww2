@@ -17,7 +17,7 @@ a:focus{outline:none; -moz-outline:none}
 .login .panel,.register .panel{padding:30px 15px;}
 .login i,.register i{color:#999999;}
 .login .footer,.register .footer{padding:2em 0;}
-.login .footer,.register .footer,.login .footer a,.register .footer a{color:#ffffff;}
+.login .footer,.register .footer,.login .footer a,.register .footer a{color:#black;}
 /*首页*/
 .home .panel{border-radius:0;}
 .home .panel-default{border-color:#EEE;}
