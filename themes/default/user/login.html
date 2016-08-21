@@ -5,10 +5,18 @@
 	@media screen and (min-width:1200px){.login .panel.panel-default{width:50%;}}
 </style>
 <div class="login">
-	<div class="logo">
+	
+	<div class="row">
+		<div class="col-md-5"></div>
+		<div class="col-md-7" style="top: 100px;">
+	
+	
+	<div class="clearfix" style="margin-bottom:5em;">
+		
+		<div class="logo" style="margin-left: 50px;">
 		<a href="./?refresh" {if !empty($_W['setting']['copyright']['blogo'])}style="background:url('{php echo tomedia($_W['setting']['copyright']['blogo']);}') no-repeat;"{/if}></a>
 	</div>
-	<div class="clearfix" style="margin-bottom:5em;">
+		
 		<div class="panel panel-default container">
 			<div class="panel-body">
 				<form action="" method="post" role="form" id="form1" onsubmit="return formcheck();">
@@ -44,7 +52,14 @@
 			</div>
 		</div>
 	</div>
-	<div class="center-block footer" role="footer">
+	
+	</div>
+	
+	<div class="row">
+		<div class="col-md-4"></div>
+		<div class="col-md-4">
+	
+	<div class="center-block footer" role="footer" style="margin-top: 100px;">
 		<div class="text-center">
 			{if empty($_W['setting']['copyright']['footerright'])}<a href="www.360yygo.com">关于云云Go</a>&nbsp;&nbsp;<a href="tencent://message/?uin=2747669515&Menu=yes">云云Go论坛</a>&nbsp;&nbsp;<a href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&key=XzgwMDA4MzA3NV8zMDk2MDdfODAwMDgzMDc1XzJf">联系客服</a>{else}{$_W['setting']['copyright']['footerright']}{/if} &nbsp; &nbsp; {if !empty($_W['setting']['copyright']['statcode'])}{$_W['setting']['copyright']['statcode']}{/if}
 		</div>
@@ -53,6 +68,8 @@
 		</div>
 	</div>
 </div>
+	</div>
+	</div>
 <script>
 function formcheck() {
 	if($('#remember:checked').length == 1) {
